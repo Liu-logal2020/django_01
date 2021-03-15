@@ -15,6 +15,9 @@ from django.shortcuts import render
 #来访问视图函数
 
 def index(request):
-    return render(request,'book/index.html')
+    context={
+        'name':'马上双11，点击有惊喜'
+    }
+    return render(request,'book/index.html',context=context)
     # return HttpResponse('OK!')
 
