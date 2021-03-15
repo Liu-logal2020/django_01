@@ -15,5 +15,6 @@ from django.shortcuts import render
 #来访问视图函数
 
 def index(request):
+    return render(request,'book/index.html')
+    # return HttpResponse('OK!')
 
-    return HttpResponse('OK!')
